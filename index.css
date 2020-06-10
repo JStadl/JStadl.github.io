@@ -1,0 +1,14 @@
+html{
+    text-align: center;
+    background-color: darkslategray;
+    color: whitesmoke;
+    
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 15rem;
+    height: 40rem;
+    padding-top: 10rem;
+    
+}
