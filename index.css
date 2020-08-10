@@ -1,14 +1,15 @@
-html{
+body{
     text-align: center;
-    background-color: darkslategray;
-    color: whitesmoke;
-    
+  
+        
+        background: linear-gradient(to right, #22313f, #34495e);
+      
 }
 h1{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    font-size: 15vw;
-    height: 40rem;
-    padding-top: 10rem;
     
+    text-align: center;
+    
+}
+h2{
+    text-align: center;
 }
