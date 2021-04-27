@@ -14,9 +14,8 @@ h2{
     text-align: center;
 }
 
-.carousel-inner img {
-    margin: auto;
-    width: 80%;
+.carousel-inner img{
+    width: 80vw;
     
   }
 
@@ -40,6 +39,7 @@ h2{
     border-radius: 0.4rem;
     background-color: #ecf0f1 !important;
     min-height: 20rem;
+    width:60vw;
 }
 .supportSection{
    
@@ -48,6 +48,8 @@ h2{
     border-radius: 0.4rem;
     background-color: #ecf0f1 !important;
     min-height: 10rem;
+    width:60vw;
+
 }
 a{
     font-weight: bold;
