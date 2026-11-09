@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Blog | {{ config.title }}{% endblock %}
+
+{% block content %}
+<div class="home-intro">
+  <h1>Blog</h1>
+</div>
+
+<ul class="post-list">
+  {% for post in section.pages %}
+  <li class="post-item">
+    <span class="post-date">{{ post.date | date(format="%B %e, %Y") }}</span>
+    <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+    {% if post.description %}
+    <p class="post-summary">{{ post.description }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+{% if section.pages | length == 0 %}
+<p>Nothing here yet — check back soon.</p>
+{% endif %}
+{% endblock %}

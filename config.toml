@@ -1,0 +1,15 @@
+base_url = "https://jstadl.github.io"
+title = "James Stadler"
+description = "Personal site and blog"
+compile_sass = true
+build_search_index = false
+generate_feeds = true
+feed_filenames = ["rss.xml"]
+
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-dark"
+
+[extra]
+author = "James Stadler"
+github = "https://github.com/jstadl"

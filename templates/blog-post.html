@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+{% block description %}{{ page.description | default(value=config.description) }}{% endblock %}
+
+{% block content %}
+<article>
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date }}">{{ page.date | date(format="%B %e, %Y") }}</time>
+      {% if page.extra.reading_time %}
+      <span>&middot; {{ page.reading_time }} min read</span>
+      {% endif %}
+    </div>
+  </header>
+
+  {% if page.toc | length > 0 %}
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ul>
+      {% for h1 in page.toc %}
+      <li>
+        <a href="{{ h1.permalink }}">{{ h1.title }}</a>
+        {% if h1.children | length > 0 %}
+        <ul>
+          {% for h2 in h1.children %}
+          <li><a href="{{ h2.permalink }}">{{ h2.title }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+
+  <div class="post-content">
+    {{ page.content | safe }}
+  </div>
+</article>
+{% endblock %}
