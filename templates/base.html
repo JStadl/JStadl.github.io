@@ -16,7 +16,7 @@
 <body>
   <nav class="site-nav">
     <div class="nav-inner">
-      <a class="site-title" href="{{ config.base_url }}">{{ config.title }}</a>
+      <a class="site-title" href="{{ get_url(path='/') }}">{{ config.title }}</a>
       <div class="nav-links">
         <a href="{{ get_url(path='@/blog/_index.md') }}">Blog</a>
         <a href="{{ get_url(path='@/projects/_index.md') }}">Projects</a>
