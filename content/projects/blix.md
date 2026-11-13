@@ -1,6 +1,6 @@
 +++
 title = "Blix"
-description = "A video game I made when I was 16, available for iOS and the Web"
+description = "A video game I made when I was 16, available for iOS and the Web, my first big coding project."
 weight = 3
 
 [extra]

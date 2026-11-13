@@ -1,6 +1,6 @@
 +++
 title = "Shatter Buddy"
-description = "A simple but fun game I made when I was 18"
+description = "A short game I made when I was 18, mainly to learn some 3d modelling."
 weight = 1
 
 [extra]

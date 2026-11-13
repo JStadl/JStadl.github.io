@@ -1,6 +1,6 @@
 +++
 title = "Math.Sound"
-description = "An online audio synthesizer I made when I was 17, powered by mathematical functions"
+description = "An online audio synthesizer from when I was 17, powered by mathematical functions."
 weight = 2
 
 [extra]
